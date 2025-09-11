@@ -24,7 +24,7 @@ function limparCampo(){
 function atualizarAmigos(){
  
     let novoAmigo = document.getElementById('listaAmigos'); //Obter o elemento HTML para selecionar a lista onde os amigos serão exibidos
-    novoAmigo.innerHTML = ''; //se o HTML já possui algo ele repetirá. para não ocorrer isso usamos o metodo .innerHTML
+    novoAmigo.innerHTML = ''; //se o HTML já possui algum nome, ele repetirá a listagem. Para evitar, usamos o método .innerHTML
 
     for (let i = 0; i < amigos.length; i++){
         
