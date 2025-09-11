@@ -1,13 +1,10 @@
 let amigos = []; 
 
-function adicionarAmigo() { //Criar uma função para adicionar amigos na lista
-    
+function adicionarAmigo() { //Criar uma função para adicionar amigos na lista  
     let nome = document.querySelector('input').value; //Obter os nomes dos participantes
 
-    if (nome.trim() !== "") { //Condição para ignorar entradas em branco
-                
+    if (nome.trim() !== "") { //Condição para ignorar entradas em branco            
         amigos.push(nome); //Adicionar o amigo na lista de participantes 
-
         atualizarAmigos();
         limparCampo();
     } else {
@@ -22,7 +19,6 @@ function limparCampo(){
     }
 
 function atualizarAmigos(){
- 
     let novoAmigo = document.getElementById('listaAmigos'); //Obter o elemento HTML para selecionar a lista onde os amigos serão exibidos
     novoAmigo.innerHTML = ''; //Se o HTML já possui algum nome, ele repetirá a listagem. Para evitar, usamos o método '.innerHTML'
 
@@ -34,7 +30,6 @@ function atualizarAmigos(){
 }
 
 function sortearAmigo(){
-    
     if (amigos == 0)
         alert('Sem amigos para sortear.');
     else{
